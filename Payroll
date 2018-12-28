@@ -1,0 +1,44 @@
+public class EmployeePayrollLH 
+{
+	private String employeeNameLH, idNumberLH;
+	private double hourlyPayRateLH, numberOfHoursWorkedLH; 
+	
+	public void setNameLH(String name)
+	{
+		employeeNameLH = name;
+	}
+	public String getNameLH(String name)
+	{
+		return employeeNameLH;
+	}
+	public void setIdLH(String num)
+	{
+		idNumberLH = num;
+	}
+	public String getIdLH(String name)
+	{
+		return idNumberLH;
+	}	
+	public void acceptPayRateLH(double rate)
+	{
+		hourlyPayRateLH = rate;
+	}
+	public double getPayRateLH()
+	{
+		return hourlyPayRateLH;
+	}
+	
+	public void setHours(double hours)
+	{
+		numberOfHoursWorkedLH = hours;
+	}
+	public double getHours()
+	{
+		return numberOfHoursWorkedLH;
+	}
+	public double calculateGrossPay()
+	{
+		return hourlyPayRateLH * numberOfHoursWorkedLH;
+	}
+
+}
