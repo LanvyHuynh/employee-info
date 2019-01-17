@@ -1,5 +1,3 @@
-//Lanvy Huynh, CIS 2830, section 03, 4/17/2018
-
 import java.text.DecimalFormat;
 import java.util.Scanner;
 public class PenniesforPayLH {
