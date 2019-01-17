@@ -1,0 +1,29 @@
+//Lanvy Huynh, CIS 2830, section 03, 4/17/2018
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+public class PenniesforPayLH {
+    public static void main(String[] args) 
+    {
+        Scanner keyboardLH = new Scanner(System.in);
+
+        int numDaysLH, dayLH = 1;
+        double salaryLH = 0.01, totalSalaryLH = 0.00;
+
+        DecimalFormat formatterLH = new DecimalFormat ("#.00");
+
+        System.out.println("Enter the number of days for your salary: ");
+        numDaysLH = keyboardLH.nextInt();
+
+        while ((numDaysLH - dayLH) >= 0)
+        {
+            salaryLH = salaryLH * 2;
+            totalSalaryLH += salaryLH;
+            System.out.println("The day is " + dayLH + " and the pay is $" + salaryLH);
+            dayLH++;
+        }
+        
+        System.out.printf("The total pay is $%.2f", totalSalaryLH);
+    }
+
+}
